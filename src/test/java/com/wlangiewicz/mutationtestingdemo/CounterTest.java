@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 /*
  Uncommented tests have a 100% line coverage
  But mutation coverage is only 14%
+ Example of VOID_METHOD_CALL_MUTATOR
  */
 public class CounterTest {
 

@@ -1,15 +1,15 @@
 package com.wlangiewicz.mutationtestingdemo;
 
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class Filters {
-    public static boolean isLessThenOrEqual10(Integer n) {
-        return n <= 10;
+    public static Predicate<Integer> isLessThenOrEqual10() {
+        return n -> n <= 10;
     }
 
-    public static List<Integer> filterList(List<Integer> list) {
-        return list.stream().filter(Filters::isLessThenOrEqual10).collect(Collectors.toList());
+    public static Stream<Integer> filterList(Stream<Integer> s) {
+        return s.filter(isLessThenOrEqual10());
     }
 
 }
