@@ -4,12 +4,13 @@ import org.junit.Test;
 
 import java.util.stream.Stream;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /*
  Uncommented tests have a 100% line and mutation coverage
  One mutant will survive
  Example of CONDITIONALS_BOUNDARY_MUTATOR
+ Problem with PIT: doesn't mutate collection contents - note that we are not asserting it in the tests
  */
 public class FiltersTest {
 

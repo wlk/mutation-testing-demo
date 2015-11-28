@@ -2,6 +2,7 @@ package com.wlangiewicz.mutationtestingdemo;
 
 public class Counter {
     private int count;
+
     public Counter() {
         count = 0;
     }
