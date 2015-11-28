@@ -26,7 +26,7 @@ buildscript {
 
 pitest {
     pitestVersion = "1.1.7"
-    threads = 1
+    threads = 4
     outputFormats = ['XML', 'HTML']
 
     // comment out following line to enable only default mutators
