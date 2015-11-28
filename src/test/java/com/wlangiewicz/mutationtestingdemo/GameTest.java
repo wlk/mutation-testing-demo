@@ -1,4 +1,4 @@
-package com.wlangiewicz.mutationtesting1;
+package com.wlangiewicz.mutationtestingdemo;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 /*
  Implementation of the Bowling Game Kata (tests) by Uncle Bob
+ All tests pass, no mutants survive
  */
 public class GameTest {
     private Game g;

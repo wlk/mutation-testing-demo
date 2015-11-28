@@ -1,4 +1,4 @@
-package com.wlangiewicz.mutationtesting1;
+package com.wlangiewicz.mutationtestingdemo;
 
 /*
  Implementation of the Bowling Game Kata by Uncle Bob

@@ -1,4 +1,4 @@
-package com.wlangiewicz.mutationtesting1;
+package com.wlangiewicz.mutationtestingdemo;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

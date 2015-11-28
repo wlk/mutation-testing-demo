@@ -1,4 +1,4 @@
-package com.wlangiewicz.mutationtesting1;
+package com.wlangiewicz.mutationtestingdemo;
 
 public class Operators {
     public static boolean and(int a, int b) {
