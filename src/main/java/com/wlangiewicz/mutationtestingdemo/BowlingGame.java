@@ -1,7 +1,7 @@
 package com.wlangiewicz.mutationtestingdemo;
 
 /*
- Implementation of the Bowling Game Kata by Uncle Bob
+ Implementation of the Bowling Game Kata by Uncle Bob - slightly modified version
  */
 @SuppressWarnings("Duplicates")
 public class BowlingGame {
