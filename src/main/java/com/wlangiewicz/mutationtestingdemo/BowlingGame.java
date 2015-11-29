@@ -32,6 +32,23 @@ public class BowlingGame {
         return score;
     }
 
+    // Moved this method here from the test
+    public void rollStrike() {
+        roll(10);
+    }
+
+    // Moved this method here from the test
+    public void rollSpare() {
+        roll(5);
+        roll(5);
+    }
+
+    // Moved this method here from the test
+    public void rollMany(int n, int pins) {
+        for (int i = 0; i < n; i++) // Surviving mutant on this line: not checking maximum number of rolls
+            roll(pins);
+    }
+
     private boolean isStrike(int frameIndex) {
         return rolls[frameIndex] == 10;
     }

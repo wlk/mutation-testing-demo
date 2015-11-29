@@ -31,6 +31,20 @@ public class BowlingGameNoMutants {
         return score;
     }
 
+    public void rollStrike() {
+        roll(10);
+    }
+
+    public void rollSpare() {
+        roll(5);
+        roll(5);
+    }
+
+    public void rollMany(int n, int pins) {
+        for (int i = 0; i < n; i++)
+            roll(pins);
+    }
+
     private boolean isStrike(int frameIndex) {
         return rolls[frameIndex] == 10;
     }

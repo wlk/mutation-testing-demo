@@ -7,7 +7,12 @@ import static org.junit.Assert.assertEquals;
 
 /*
  Implementation of the Bowling Game Kata (tests) by Uncle Bob
+
  All tests pass, no mutants survive (with default mutators)
+
+ I have moved 'rollStrike', 'rollSpare', 'rollMany' into BowlingGame class,
+ after that mutant with CONDITIONALS_BOUNDARY_MUTATOR started to survive
+
  */
 @SuppressWarnings("Duplicates")
 public class BowlingGameTest {
@@ -20,44 +25,31 @@ public class BowlingGameTest {
 
     @Test
     public void testAllOnes() throws Exception {
-        rollMany(20, 1);
+        g.rollMany(20, 1);
         assertEquals(20, g.score());
     }
 
     @Test
     public void testOneSpare() throws Exception {
-        rollSpare();
+        g.rollSpare();
         g.roll(3);
-        rollMany(17, 0);
+        g.rollMany(17, 0);
         assertEquals(16, g.score());
     }
 
     @Test
     public void testOneStrike() throws Exception {
-        rollStrike();
+        g.rollStrike();
         g.roll(3);
         g.roll(4);
-        rollMany(16, 0);
+        g.rollMany(16, 0);
         assertEquals(24, g.score());
     }
 
     @Test
     public void testPerfectGame() throws Exception {
-        rollMany(12, 10);
+        g.rollMany(12, 10);
         assertEquals(300, g.score());
     }
 
-    private void rollStrike() {
-        g.roll(10);
-    }
-
-    private void rollSpare() {
-        g.roll(5);
-        g.roll(5);
-    }
-
-    private void rollMany(int n, int pins) {
-        for (int i = 0; i < n; i++)
-            g.roll(pins);
-    }
 }
