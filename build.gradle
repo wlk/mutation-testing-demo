@@ -30,5 +30,5 @@ pitest {
     outputFormats = ['XML', 'HTML']
 
     // uncomment following line to enable all mutators
-    //mutators = ['CONDITIONALS_BOUNDARY', 'NEGATE_CONDITIONALS', 'REMOVE_CONDITIONALS', 'MATH', 'INCREMENTS', 'INVERT_NEGS', 'INLINE_CONSTS', 'RETURN_VALS', 'VOID_METHOD_CALLS', 'NON_VOID_METHOD_CALLS', 'CONSTRUCTOR_CALLS', 'EXPERIMENTAL_MEMBER_VARIABLE', 'EXPERIMENTAL_SWITCH']
+    // mutators = ['ALL']
 }
