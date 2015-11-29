@@ -58,7 +58,7 @@ public class BowlingGameRawTest {
     }
 
     public void rollMany(int n, int pins) {
-        for (int i = 0; i < n; i++) // Surviving mutant on this line: not checking maximum number of rolls
+        for (int i = 0; i < n; i++)
             g.roll(pins);
     }
 

@@ -2,13 +2,12 @@ package com.wlangiewicz.mutationtestingdemo;
 
 /*
  Implementation of the Bowling Game Kata by Uncle Bob
+ Rerun this code with all mutators to see some problems
  */
 @SuppressWarnings("Duplicates")
 public class BowlingGameRaw {
-    // size of the game is not tested, you can change it to 20 or 22 (or more) and all tests will pass
-    // 21 is the maximum number of rolls in bowling, but this wasn't tested as well
     private int rolls[] = new int[21];
-    private int currentRoll = 0; // remove assignment to kill one non default mutant
+    private int currentRoll = 0;
 
     public void roll(int pins) {
         rolls[currentRoll++] = pins;
@@ -48,7 +47,6 @@ public class BowlingGameRaw {
         return rolls[frameIndex + 1] + rolls[frameIndex + 2];
     }
 
-    // There is no test to check `isSpare` logic
     private boolean isSpare(int frameIndex) {
         return rolls[frameIndex] + rolls[frameIndex + 1] == 10;
     }

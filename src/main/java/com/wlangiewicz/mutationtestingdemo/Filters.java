@@ -8,7 +8,7 @@ public class Filters {
         return n -> n <= 10;
     }
 
-    public static Stream<Integer> filterList(Stream<Integer> s) {
+    public static Stream<Integer> filterStream(Stream<Integer> s) {
         return s.filter(isLessThenOrEqual10());
     }
 

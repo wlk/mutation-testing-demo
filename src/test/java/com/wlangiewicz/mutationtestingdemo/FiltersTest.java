@@ -18,7 +18,7 @@ public class FiltersTest {
     public void elements_below_10_should_be_kept() {
         Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5, 6);
 
-        Stream<Integer> output = Filters.filterList(numbers);
+        Stream<Integer> output = Filters.filterStream(numbers);
 
         long elements = output.count();
 
@@ -29,7 +29,7 @@ public class FiltersTest {
     public void elements_above_10_should_be_removed() {
         Stream<Integer> numbers = Stream.of(11, 14);
 
-        Stream<Integer> output = Filters.filterList(numbers);
+        Stream<Integer> output = Filters.filterStream(numbers);
 
         long elements = output.count();
 
@@ -37,12 +37,11 @@ public class FiltersTest {
     }
 
     // Uncomment this test to see all mutants killed
-    /*
-    @Test
+    /*@Test
     public void elements_equal_to_10_should_be_kept() {
         Stream<Integer> numbers = Stream.of(10, 10);
 
-        Stream<Integer> output = Filters.filterList(numbers);
+        Stream<Integer> output = Filters.filterStream(numbers);
 
         long elements = output.count();
 
