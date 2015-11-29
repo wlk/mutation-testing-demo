@@ -3,12 +3,12 @@
 Demo that shows how to use PIT - mutation testing framework:
 
 run tests:
-```bash
+```
 ./gradlew test
 ```
 
 run PIT:
-```bash
+```
 ./gradlew pitest
 ```
 
@@ -16,3 +16,11 @@ Then analyze the results in:
 ```
 build/reports/pitest/...
 ```
+
+Good resources:
+* http://pitest.org/
+* http://pitest.org/quickstart/basic_concepts/
+* https://github.com/szpak/gradle-pitest-plugin
+* http://www.codeaffine.com/2015/10/05/what-the-heck-is-mutation-testing/
+* http://dev.theladders.com/2013/02/mutation-testing-with-pit-a-step-beyond-normal-code-coverage/
+
