@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
  All tests pass, no mutants survive
  */
 @SuppressWarnings("Duplicates")
-public class GameNoMutantsTest {
-    private GameNoMutants g;
+public class BowlingGameNoMutantsTest {
+    private BowlingGameNoMutants g;
 
     @Before
     public void setUp() throws Exception {
-        g = new GameNoMutants();
+        g = new BowlingGameNoMutants();
     }
 
     @Test
@@ -55,7 +55,7 @@ public class GameNoMutantsTest {
         assertEquals(5, g.score());
     }
 
-    // This test kills mutant "Game with 20 rolls"
+    // This test kills mutant "BowlingGame with 20 rolls"
     @Test
     public void testMaxRollsGame() throws Exception {
         rollMany(19, 0);
@@ -64,10 +64,10 @@ public class GameNoMutantsTest {
         assertEquals(15, g.score());
     }
 
-    // This test kills mutant "Game with over 21 rolls"
+    // This test kills mutant "BowlingGame with over 21 rolls"
     @Test
     public void testMaxRolls() throws Exception {
-        assertEquals(21, GameNoMutants.MAX_ROLLS);
+        assertEquals(21, BowlingGameNoMutants.MAX_ROLLS);
     }
 
     private void rollStrike() {

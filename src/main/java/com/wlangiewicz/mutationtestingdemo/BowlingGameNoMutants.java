@@ -1,10 +1,10 @@
 package com.wlangiewicz.mutationtestingdemo;
 
 /*
- Implementation of the Bowling Game Kata by Uncle Bob
+ Implementation of the Bowling Game Kata by Uncle Bob with fix that allows to kill all mutants
  */
 @SuppressWarnings("Duplicates")
-public class GameNoMutants {
+public class BowlingGameNoMutants {
     public static int MAX_ROLLS = 21;
     private int rolls[] = new int[MAX_ROLLS];
     private int currentRoll;

@@ -4,7 +4,7 @@ package com.wlangiewicz.mutationtestingdemo;
  Implementation of the Bowling Game Kata by Uncle Bob
  */
 @SuppressWarnings("Duplicates")
-public class Game {
+public class BowlingGame {
     // size of the game is not tested, you can change it to 20 or 22 (or more) and all tests will pass
     // 21 is the maximum number of rolls in bowling, but this wasn't tested as well
     private int rolls[] = new int[21];

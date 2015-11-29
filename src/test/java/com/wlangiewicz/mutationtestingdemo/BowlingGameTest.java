@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
  All tests pass, no mutants survive (with default mutators)
  */
 @SuppressWarnings("Duplicates")
-public class GameTest {
-    private Game g;
+public class BowlingGameTest {
+    private BowlingGame g;
 
     @Before
     public void setUp() throws Exception {
-        g = new Game();
+        g = new BowlingGame();
     }
 
     @Test
